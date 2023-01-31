@@ -5,13 +5,13 @@ from tkinter import *
 # globally declare wb and sheet variable
 
 # opening the existing excel file
-wb = load_workbook('https://docs.google.com/spreadsheets/d/1-EsYCYURHD1Un0Ujk9JL-YTfRRyxMN24EOHtbpTmJe8')
+wb = load_workbook(''C:\\Users\\Admin\\Desktop\\trial.xlsx')
 
 # create the sheet object
 sheet = wb.active
 
 
-def https://docs.google.com/spreadsheets/d/1-EsYCYURHD1Un0Ujk9JL-YTfRRyxMN24EOHtbpTmJe8():
+def trial():
 	
 	# resize the width of columns in
 	# excel spreadsheet
