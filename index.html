@@ -1,8 +1,6 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Order placement</title>
-<link rel="stylesheet" href="style.css">
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
 <script
   src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
@@ -14,52 +12,55 @@ function SubForm (){
         type:'post',
         data:$("#myForm").serializeArray(),
         success: function(){
-          alert("Form Data Submitted :)")
+          alert("Your order has been placed :)")
         },
         error: function(){
-          alert("There was an error :(")
+          alert("There was an error submitting your request. Try again :(")
         }
     });
 }
 </script>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
 <body>
-  <form id="myForm">
-    <div class="form-header">
-      <h1>Enter Delivery Details<h1>
+  <div class="container">
+    <div class="title">Enter the delivery details</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Pickup Point</span>
+            <input type="text" placeholder="Enter your name" required name="pickup_point">
+          </div>
+          <div class="input-box">
+            <span class="details">Customer's Name</span>
+            <input type="text" placeholder="Enter your customer's name" required name="customer_name">
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter customer's phone number" required name="contact">
+          </div>
+          <div class="input-box">
+            <span class="details">Delivery Location</span>
+            <input type="text" placeholder="Enter your number" required name="delivery_location">
+          </div>
+          <div class="input-box">
+            <span class="details">Enter Delivery Date and time</span>
+            <input type="datetime-local" placeholder="Enter your password" required name="delivery_time">
+          </div>
+          <div class="input-box">
+            <span class="details">Extra Instructions</span>
+            <input type="text" placeholder="Enter extra instructions for the rider" name="message">
+          </div>
+          <div class="button">
+            <input type="submit" value="Submit">
+          </div>
+      </form>
     </div>
-    
-    <div class="form-body">
-    <label>Pick up Point</label>
-    <br/>
-    <input type="text" name="pickup_point" />
-    <br/>
-    <label>Customer Name</label>
-    <br/>
-    <input type="text" name="customer_name" />
-    <br/>
-    <label>Contact</label>
-    <br/>
-    <input type="number" name="contact" />
-    <br/>
-    <label>Delivery Location</label>
-    <br/>
-    <input type="text" name="delivery_location" />
-    <br/>
-    <label>Delivery Date and Time</label>
-    <br/>
-    <input type="datetime-local" name="delivery_time" />
-    <br/>
-    <label>Message</label>
-    <br/>
-    <input type="text" name="message">
-    </textarea>
-    <br/>
-    </div>
-    <div class="form-footer">
-    </div>
-    <button onclick="SubForm()">Submit</button>
-  </form>
-  
+  </div>
+
 </body>
 </html>
