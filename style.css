@@ -11,7 +11,7 @@ body{
   justify-content: center;
   align-items: center;
   padding: 10px;
-  background: linear-gradient(135deg, #f1c232, #38761d);
+  background: linear-gradient(180deg, #f1c232, #38761d);
 }
 .container{
   max-width: 700px;
@@ -31,7 +31,8 @@ body{
   font-size: 25px;
   font-weight: 500;
   position: relative;
-  color: #38761d
+  color: #38761d;
+  text-align: center;
 }
 .content form .user-details{
   display: flex;
