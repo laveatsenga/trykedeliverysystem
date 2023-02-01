@@ -24,8 +24,12 @@ function SubForm (){
 </script>
 </head>
 <body>
-  <h1>Enter delivery details</h1>
   <form id="myForm">
+    <div class="form-header">
+      <h1>Enter Delivery Details<h1>
+    </div>
+    
+    <div class="form-body">
     <label>Pick up Point</label>
     <br/>
     <input type="text" name="pickup_point" />
@@ -51,6 +55,9 @@ function SubForm (){
     <input type="text" name="message">
     </textarea>
     <br/>
+    </div>
+    <div class="form-footer">
+    </div>
   </form>
   <button onclick="SubForm()">Submit</button>
 </body>
