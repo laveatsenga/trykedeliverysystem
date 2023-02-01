@@ -77,11 +77,11 @@ form .input-box span.details{
    cursor: pointer;
  }
 
- form .button{
+ /*form .button{
    height: 45px;
    margin: 35px 0
- }
- form .button input{
+ }*/
+ .button {
    height: 100%;
    width: 100%;
    border-radius: 5px;
@@ -94,7 +94,7 @@ form .input-box span.details{
    transition: all 0.3s ease;
    background: #f1c232;
  }
- form .button input:hover{
+ .button:hover{
   /* transform: scale(0.99); */
   background: #38761d;
   }
